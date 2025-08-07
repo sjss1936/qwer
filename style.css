@@ -1,0 +1,297 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 네비게이션 바 */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0052ff; /* 포인트 블루 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: #0052ff;
+}
+
+/* 메인 섹션 */
+main {
+    padding-top: 70px;
+}
+
+section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#hero {
+    background-color: #f0f5ff; /* 연한 파란색 배경 */
+    padding: 120px 20px;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+.metrics {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.metric h3 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0052ff;
+}
+
+.metric p {
+    font-size: 16px;
+    color: #555;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/* 타임라인 */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #e0e0e0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: #0052ff;
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #555;
+}
+
+/* 서비스 카드 */
+#services {
+    background-color: #f0f5ff;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1;
+    max-width: 320px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin: 20px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 20px 20px;
+}
+
+/* 문화 섹션 카드 */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0052ff;
+    margin-bottom: 15px;
+}
+
+/* 채용 공고 */
+.job-postings {
+    margin: 50px 0;
+}
+
+.job-posting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.job-posting h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.job-posting p {
+    margin: 0;
+    color: #777;
+}
+
+.btn-apply {
+    background-color: #fff;
+    color: #0052ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #0052ff;
+    transition: all 0.3s;
+}
+
+.btn-apply:hover {
+    background-color: #0052ff;
+    color: #fff;
+}
+
+/* 버튼 */
+.btn {
+    display: inline-block;
+    background-color: #0052ff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003ecc;
+}
+
+/* 푸터 */
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #eee;
+}
